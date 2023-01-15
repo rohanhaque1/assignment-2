@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -185,6 +184,34 @@ nav ul li a {
 
 
 
+/* Skills Section */
+
+.skill-title {
+    width: 50%;
+}
+.skill-title h2 {
+    font-size: 30px;
+    margin: 20px 0;
+}
+.skill-title > p {
+    font-size: 14px;
+    color: #636e72;
+    margin-bottom: 70px;
+}
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    justify-content: space-around;
+}
+.skill-item {
+    border: 2px solid #c44569;
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+
 
 
 /* Media Query Section */
@@ -239,6 +266,16 @@ nav ul li a {
         top: 90%;
         left: 25%;
     }
+    .skill-title{
+        margin: 40px auto;
+    }
+    .skill-title h2, .skill-title p {
+        text-align: center;
+    }
+    .skill-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 30px;
+    }
 }
 
 
@@ -280,6 +317,16 @@ nav ul li a {
         top: 90%;
         left: 25%;
     }
+    .skill-title{
+        margin: 40px auto;
+    }
+    .skill-title h2, .skill-title p {
+        text-align: center;
+    }
+    .skill-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 30px;
+    }
 }
 
 
@@ -312,6 +359,16 @@ nav ul li a {
     .experience-certificate {
         top: 93%;
         left: 35%;
+    }
+    .skill-title{
+        margin: 40px auto;
+    }
+    .skill-title h2, .skill-title p {
+        text-align: center;
+    }
+    .skill-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 30px;
     }
 }
 
